@@ -1,0 +1,17 @@
+.card-table {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .dataTables_wrapper {
+        display: none;
+    }
+
+    .card-table {
+        display: block;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
