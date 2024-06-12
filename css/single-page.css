@@ -1,0 +1,39 @@
+.logo-santunan {
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #4e73df;
+}
+
+.anak-santunan-tag {
+    color:#4e73df;
+}
+
+.price-tag {
+    font-weight: 800;
+     color: #098D6D;
+}
+
+.total-student-tag {
+    font-weight: 800;
+     color: #098D6D;
+}
+
+.payment-badge {
+    background-color: #F0FFEC;
+    padding: 5px;
+    color: #098D6D;
+    border-radius: 5px;
+}
+ 
+.commitment-text-description {
+    font-size:0.8rem;
+}
+
+.date-tag {
+    font-size: 10px;
+}
