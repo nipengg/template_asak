@@ -3595,6 +3595,7 @@ input[type="button"].btn-block {
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
+  user-select: none; 
   border: 0;
 }
 
