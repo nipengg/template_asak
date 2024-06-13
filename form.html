@@ -165,7 +165,7 @@
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1">Email address</label>
                                     <input class="form-control" id="exampleFormControlInput1" type="email"
-                                        placeholder="name@example.com">
+                                        maxlength="25" data-toggle="maxlength" placeholder="name@example.com">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput2">Date</label>
@@ -395,6 +395,8 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <script src="js/bootstrap-maxlength.min.js"></script>
+
     <!-- Custom scripts for all pages-->
     <script src="js/script.js"></script>
 
@@ -415,8 +417,16 @@
                 theme: 'classic'
             });
             $("#exampleFormControlInput2").dateDropdowns({
-                dropdownClass: "form-control col-md-3 mr-2",
-                wrapperClass: "date-dropdowns row ml-1",
+                dropdownClass: "form-control col-3 mr-2",
+                wrapperClass: "date-dropdowns row-datepicker",
+            });
+
+            $('[maxlength]').maxlength({
+                alwaysShow: true,
+                threshold: 10,
+                warningClass: "badge badge-success mt-1",
+                limitReachedClass: "badge badge-danger mt-1",
+                separator: ' / ',
             });
         });
     </script>

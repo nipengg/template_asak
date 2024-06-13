@@ -621,6 +621,11 @@ pre code {
   margin-left: -0.75rem;
 }
 
+.row-datepicker {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
