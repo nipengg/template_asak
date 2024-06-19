@@ -24,12 +24,13 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <!-- <div class="sidebar-brand-icon">
-                    <img src="img/ASAK.png" style="height: 50px; width: 100px;" alt="">
-                </div> -->
-                <div class="sidebar-brand-text mx-3">ASAK v3</div>
+                <div class="sidebar-brand-icon">
+                    <img src="img/ASAK.png" style="height: 40px; width: 50px;" alt="">
+                </div>
+                <!-- <div class="sidebar-brand-text mx-3">ASAK v3</div> -->
             </a>
 
             <hr class="sidebar-divider my-0">
@@ -42,7 +43,6 @@
 
             <hr class="sidebar-divider">
 
-            <!-- Heading Sidebar -->
             <div class="sidebar-heading">
                 Data Master
             </div>
@@ -71,16 +71,16 @@
                         <a class="collapse-item" href="tables.html">
                             Tables
                         </a>
-                        <a class="collapse-item" href="tables.html">
+                        <a class="collapse-item" href="form.html">
                             Form
                         </a>
                     </div>
                 </div>
             </li>
 
-            <hr class="sidebar-divider d-none d-md-block">
+            <hr class="sidebar-divider d-md-block">
 
-            <div class="text-center d-none d-md-inline">
+            <div class="text-center d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
@@ -156,6 +156,10 @@
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput2">Date</label>
                                     <input class="form-control" id="exampleFormControlInput2" type="hidden">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">File Input</label>
+                                    <input class="form-control" type="file" id="formFile" multiple />
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlSelect1">Example select</label>
