@@ -11756,10 +11756,6 @@ a:focus {
 }
 
 @media (max-width: 768px) {
-  .sidebar-wrapper {
-    overflow: visible;
-  }
-
   .sidebar {
     z-index: 99;
     position: fixed;
