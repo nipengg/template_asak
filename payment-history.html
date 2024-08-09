@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carmelight - History donor overview</title>
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/carmelight.css" rel="stylesheet" />
+    
+    <style>
+        .nav-tabs {
+            border:none;
+        }
+
+        .strong-card {
+            border: 1px solid #9ca9c3;
+            border-radius: 6px;
+            padding: 12px;
+         }
+
+        .nav-tabs .nav-link.active {
+            border-radius: 0px;
+            border: 0px;
+            color: #0a1325;
+            border-bottom: 2px solid #5abecc;
+        }
+
+        .total-price {
+            background-color: #eff9fa;
+            border: none;
+            padding: 4px 12px;
+            margin-bottom: 12px;
+            color: #5abecc;
+        }
+
+        .detail-container {
+            border: 1px solid #9abdff;
+            border-radius: 6px;
+            background-color: #fff;
+            padding: 8px 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #9abdff;
+            text-align: center;
+        }
+
+        .mx-tabcontainer-tabs>li>a {
+            margin-right: 0;
+             color: #6c717e;
+            font-weight: normal;
+            border-radius: 4px 4px 0 0;
+        }
+
+             
+ 
+         
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Header Navbar  -->
+    <div class="singlepage-layout-header">
+        <img class="img-responsive" src="img/CarmeLightLogo.svg" style="cursor: pointer; max-height: 27px; max-width: 91px; margin-left: 10%;">
+    </div>
+
+    <!-- Dashboard -->
+    <div class="singlepage">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-12 ">
+                    <div class="singlepage row" style="border:none;">
+
+                        <div class="singlepage-layout col-lg col-md col-12 p-0  p-2">
+                            <div class="d-flex justify-content-between">
+                                <img class="img-responsive ml-3" src="img/ArrowLeft.svg" style="cursor: pointer; height: 20px; width: 20px; "> 
+                                <span class="text-medium-strong">Aktivitas</span>
+                                <div></div>
+                            </div>
+
+
+                            <div class="container" style="width:85%; margin:auto;">
+                            <!-- Tabs -->
+                            <ul class="nav nav-tabs mx-tabcontainer-tabs justify-content-between mt-4" role="tablist">
+                                <li class="nav-item w-50">
+                                    <a class="nav-link text-center" id="komitmen-tab" data-toggle="tab" href="#komitmen" role="tab" aria-controls="komitmen" aria-selected="false">Komitmen</a>
+                                </li>
+                                <li class="nav-item w-50">
+                                    <a class="nav-link active text-center" id="riwayat-tab" data-toggle="tab" href="#riwayat" role="tab" aria-controls="riwayat" aria-selected="true">Riwayat Transfer</a>
+                                </li>
+                            </ul>
+
+                            <!-- Date picker -->
+                            <div class="mt-2 d-flex justify-content-end">
+                                <input type="date" class="form-control w-auto">
+                            </div>
+                            
+
+                            <!-- Tab Content -->
+                            <div class="tab-content mt-3">
+                                <div class="tab-pane fade " id="komitmen" role="tabpanel" aria-labelledby="komitmen-tab">
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12 mt-3">
+                                            <div class="strong-card p-2">
+                                                <div class="d-flex justify-content-between ">
+                                                    <span class="subtext-mediumstrong">ID: 00000000000000022420</span>
+                                                    <span class="subtext-mediumstrong">15 Jul 2023</span>
+                                                 </div>
+                                                 <div class="mt-3">
+                                                    <span class="text-medium-strong">1 Lilin</span>
+                                                    <br>
+                                                    <span class="subtext-strong2">Gerakan: CarmeLight</span>
+                                                    <br>
+                                                    <span class="subtext-strong2" >Program: CARMELIGHT</span>
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="subtext-strong2">Per 6 Bulan</span>
+                                                        <span class="subtext-strong2">Rp 250,000 (100 %)</span>
+                                                    </div>
+
+                                                 </div>
+                                                 <div class="mt-3 total-price d-flex justify-content-between">
+                                                    <div></div>
+                                                    <div>Total</div>
+                                                    <div>Rp: 100,000</div>
+                                                 </div>
+                                                 <div class="mt-1 detail-container d-flex justify-content-center">
+                                                    Lihat Detail Pembayaran
+                                                 </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                                <div class="tab-pane fade show active" id="riwayat" role="tabpanel" aria-labelledby="riwayat-tab">
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12 mt-3">
+                                            <div class="strong-card p-2">
+                                                <div class="d-flex justify-content-between ">
+                                                    <span class="subtext-mediumstrong">No Transaksi: MfbFY224</span>
+                                                    <span class="subtext-mediumstrong">15 Jul 2023</span>
+                                                 </div>
+                                                 <div class="mt-3">
+                                                    <span class="text-medium-strong">Keterangan</span>
+                                                    <br>
+                                                    <span class="subtext-mediumstrong">TRSF E-BANKING CR 1507/FTSCY/WS95271 100000.00 carmelight SENO HARDIJANTO PU</span>
+                                                   
+                                                 </div>
+                                                 <div class="mt-3 total-price d-flex justify-content-between">
+                                                    <div></div>
+                                                    <div>Total</div>
+                                                    <div>Rp: 100,000</div>
+                                                 </div>
+                                               
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                           
+                            
+ 
+ 
+                        </div>
+ 
+
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap5.js"></script>
+    <script src="vendor/datatables/dataTables.responsive.min.js"></script>
+    <script src="vendor/datatables/responsive.bootstrap5.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/script.js"></script>
+   
+    </body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carmelight - Home</title>
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/carmelight.css" rel="stylesheet" />
+     
+    <style>
+         .button-carmelight-primary {
+            border: 1px solid #9abdff;  
+            background: rgba(0, 0, 0, 0);
+            color: #0076ff;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-weight:600;
+            font-size: 12px;
+            border-radius: 4px;
+            width: 100%;
+            outline: none;  
+             box-shadow: none;  
+            text-align: center;  
+            cursor: pointer; 
+            transition: background-color 0.3s, border-color 0.3s;  
+        }
+
+        .button-carmelight-secondary {
+            color: #fff;
+            background-color: #5abecc;
+            padding: 6px 0px;
+            border-radius: 4px;
+            border: 1px solid #9abdff;  
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-weight:600;
+            font-size: 12px;
+            border-radius: 4px;
+            width: 100%;
+            outline: none;  
+            box-shadow: none;  
+            text-align: center;  
+            cursor: pointer; 
+            transition: background-color 0.3s, border-color 0.3s;  
+        }
+
+        .email-container {
+            background: rgb(243, 243, 243);
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .data-container {
+            padding: 12px;
+            border: 1px solid rgb(225, 225, 225);
+            border-radius: 6px;
+        }
+
+        .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+            opacity: 1;
+            background-color: #f6f8ff !important;
+            border: 1px solid #e7e7e9;
+            border-radius: 4px;
+        }
+
+        .carmelight-label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #5b5f6b;
+        }
+
+        input[type=radio]  {
+            background-color: #e7e7e9 !important;
+        }
+
+    </style>
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Header Navbar  -->
+    <div class="singlepage-layout-header">
+        <img class="img-responsive" src="img/CarmeLightLogo.svg" style="cursor: pointer; max-height: 27px; max-width: 91px; margin-left: 10%;">
+    </div>
+
+    <!-- Dashboard -->
+    <div class="singlepage">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-12">
+                    <div class="singelpage row">
+                        <div class="singlepage-layout col-lg-11 col-12 p-0 p-2" style="margin:auto" >
+                            <div class="d-flex justify-content-between">
+                                <img class="img-responsive ml-3" src="img/ArrowLeft.svg" style="cursor: pointer; height: 20px; width: 20px; "> 
+                                <p class="text-medium-strong">Pengaturan Akun</p>
+                                <div></div>
+                            </div>
+
+                            <div class="singlepage-container p-2 mt-2">
+                                <div class="row">
+                                    <!-- Left -->
+                                    <div class="col-lg-4 col-md-4 col-12">   
+                                        <!-- Grid 1 - logo gambar profile -->
+                                        <div class="text-center">
+                                            <img class="img-responsive" src="img/gambarProfile.svg" style="cursor: pointer; height: 100px; width: 100px; ">
+                                            <br class="d-none d-md-block">
+                                            <p class="text-strong text-center mt-3 mb-1">Seno Hardijanto</p>
+                                            <!-- modal pop up button to change profile -->
+                                             <button type="button" class="button-carmelight-primary text-center" data-toggle="modal" data-target="#profilePhotoModal">
+                                                Ganti Foto Profile
+                                            </button>
+
+                                            <!-- modal pop up content -->
+                                             <div class="modal fade" id="profilePhotoModal" tabindex="-1" aria-labelledby="profilePhotoModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <span class="text-strong">Update Foto Profil</span>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="mt-2 d-flex justify-content-between">
+                                                                <img class="img-responsive" src="img/gambarProfile.svg" style="cursor: pointer; height: 164px; width: 158px; ">
+
+                                                                <div class="p-4">
+                                                                    <p class="m-0 " style="text-align: left;"> <span class="text-strong">Upload Foto</span>  </p>
+                                                                    <input type="file" accept="image/*">
+                                                                </div>
+                                                            </div>
+
+                                                            <button type="button" class="mt-5 button-carmelight-secondary">Simpan</button>
+                                                        </div>
+                                                         
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <hr>
+                                        </div>
+                                        <!-- Grid 2- email address -->
+                                         <div class="email-container">
+                                            <span class="text-mediumlight">senohp@gmail.com</span>
+                                         </div>
+                                        <!-- Grid 3 - change password -->
+                                         <div>
+                                            <!-- modal pop up button to change password -->
+                                            <button class="mt-3 button-carmelight-primary text-center" data-toggle="modal" data-target="#profileChangePasswordModal">Ganti Password</button>
+
+                                            <!-- modal pop up content for changing password -->
+                                            <div class="modal fade" id="profileChangePasswordModal" tabindex="-1" aria-labelledby="profileChangePasswordModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <span class="text-strong">Update Foto Profil</span>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <!-- new password -->
+                                                            <div>
+                                                                <label  for="new-password" class="col-form-label text-start">Kata Sandi Baru</label>
+                                                                <input type="text" id="new-password" name="new-password-confirmation"  class="form-control"  >
+                                                            </div>
+
+                                                            <!-- new password confirmation -->
+                                                            <div>
+                                                                <label  for="new-password-confirmation" class="col-form-label text-start">Ulangi Kata Sandi Baru</label>
+                                                                <input type="text" name="new-password-confirmation" class="form-control"  >
+                                                            </div>
+
+                                                            <button type="button" class="mt-5 button-carmelight-secondary">Simpan</button>
+                                                        </div>
+                                                         
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                    </div>
+
+                                    <!-- Right -->
+                                    <div class="col-lg-8 col-md-8 col-12">
+                                        <!-- Edit icon -->
+                                         <div class="d-flex justify-content-end">
+                                            <!-- modal pop up button to edit data  -->
+                                             <button class="mt-3 button-carmelight-primary text-center px-3" style="width: auto;"  data-toggle="modal" data-target="#profileEditDataModal">
+                                                <i class="bi bi-pencil"></i>
+                                                 Edit
+                                            </button>
+
+                                            <!-- modal pop up content for editing data -->
+                                            <div class="modal fade" id="profileEditDataModal" tabindex="-1" aria-labelledby="profileEditDataModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <span class="text-strong">Edit Profile</span>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <!-- Jenis Identitas -->
+                                                            <div>
+                                                                <label  for="jenis-identitas" class="col-form-label text-start">Jenis Identitas</label>
+                                                                <input type="text" id="jenis-identitas" name="jenis-identitas"  class="form-control"  >
+                                                            </div>
+
+                                                             <!-- Nomor Identitas -->
+                                                             <div>
+                                                                <label  for="nomor-identitas" class="col-form-label text-start">Nomor Identitas</label>
+                                                                <input type="text" id="nomor-identitas" name="nomor-identitas"  class="form-control"  >
+                                                            </div>
+
+                                                            <!-- Upload foto identitas -->
+                                                            <div>
+                                                                <label  for="upload-foto-identitas" class="col-form-label text-start">Upload Foto Identitas</label>
+                                                                <input type="file" id="upload-foto-identitas" name="upload-foto-identitas" class="form-control"  >
+                                                            </div>
+
+                                                            <!-- Nama -->
+                                                            <div>
+                                                                <label  for="nama" class="col-form-label text-start">Nama</label>
+                                                                <input type="text" id="nama" name="nama" class="form-control"  >
+                                                            </div>
+
+                                                             <!-- Jenis kelamin -->
+                                                            <div>
+                                                                <label for="jenis-kelamin" class="col-form-label text-start">Jenis Kelamin</label>
+                                                                <div class="d-flex ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki" disabled>
+                                                                        <label class="form-check-label ml-1" style="color: black;" > 
+                                                                            Laki laki
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ml-3">
+                                                                        <input class="form-check-input" type="radio" name="jenis-kelamin" id="perempuan" value="perempuan" disabled>
+                                                                        <label class="form-check-label ml-1"  style="color: black;">
+                                                                            Perempuan
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                             <!-- Nomor hp -->
+                                                             <div>
+                                                                <label  for="nomor-hp" class="col-form-label text-start">Nomor HP</label>
+                                                                <input type="text" id="nomor-hp" name="nomor-hp" class="form-control">
+                                                            </div>
+
+                                                             <!-- Tanggal Lahir -->
+                                                             <div>
+                                                                <label  for="tanggal-lahir" class="col-form-label text-start">Tanggal Lahir</label>
+                                                                <input type="text" id="nama" name="nama" class="form-control"  >
+                                                            </div>
+
+                                                             <!-- Provinsi -->
+                                                             <div>
+                                                                <label  for="provinsi" class="col-form-label text-start">Provinsi</label>
+                                                                <input type="text" id="provinsi" name="provinsi" class="form-control"  >
+                                                            </div>
+
+                                                             <!-- Kabupaten -->
+                                                             <div>
+                                                                <label  for="kota-kabupaten" class="col-form-label text-start">Kota/Kabupaten</label>
+                                                                <input type="text" id="kota-kabupaten" name="kota-kabupaten" class="form-control"  >
+                                                            </div>
+
+                                                             <!-- Kecamatan -->
+                                                             <div>
+                                                                <label  for="kecamatan" class="col-form-label text-start">Kecamatan</label>
+                                                                <input type="text" id="kecamatan" name="kecamatan" class="form-control"  >
+                                                            </div>
+                                                            
+                                                             <!-- Kode pos -->
+                                                             <div>
+                                                                <label  for="kodepos" class="col-form-label text-start">Kode Pos</label>
+                                                                <input type="text" id="kodepos" name="kodepos" class="form-control"  >
+                                                            </div>
+
+                                                             <!-- Kecamatan -->
+                                                             <div>
+                                                                <label  for="kecamatan" class="col-form-label text-start">Kecamatan</label>
+                                                                <input type="text" id="kecamatan" name="kecamatan" class="form-control"  >
+                                                            </div>
+
+                                                            <!-- Alamat -->
+                                                             <div>
+                                                                <label for="alamat" class="col-form-label text-start">Alamat</label>
+                                                                <textarea  class="form-control mx-textarea-input mx-textarea-noresize" maxlength="250" style="height: 77.3333px !important;"></textarea>
+                                                             </div>
+
+                                                            <button type="button" class="mt-5 button-carmelight-secondary">Simpan</button>
+                                                        </div>
+                                                         
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+
+                                         <!-- Data container -->
+                                         <div class="data-container mt-3">
+                                            <!-- Jenis identitas -->
+                                            <div class="row mt-2 mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="jenis-identitas" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Jenis <br class="d-none d-md-block"> Identitas</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" id="jenis-identitas" name="jenis-identitas" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Nomor identitas -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="nomor-identitas" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Nomor <br class="d-none d-md-block"> Identitas</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="nomor-identitas" id="nomor-identitas" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Foto identitas -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="foto-identitas" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Foto <br class="d-none d-md-block"> Identitas</label>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Nama -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="nama" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Nama</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="nama" id="nama" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Jenis kelamin -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="jenis-kelamin" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Jenis <br class="d-none d-md-block"> Kelamin</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0 d-flex">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki" disabled>
+                                                        <label class="form-check-label ml-2" style="color: black;">
+                                                            Laki laki
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check ml-3">
+                                                        <input class="form-check-input" type="radio" name="jenis-kelamin" id="perempuan" value="perempuan" disabled>
+                                                        <label class="form-check-label ml-2" style="color: black;">
+                                                            Perempuan
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Nomor HP -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="nomor-hp" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Nomor <br class="d-none d-md-block"> HP</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="nomor-hp" id="nomor-hp" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Tanggal Lahir -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="tanggal-lahir" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Tanggal <br class="d-none d-md-block"> Lahir</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="tanggal-lahir" id="tanggal-lahir" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Provinsi -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="provinsi" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Provinsi</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="provinsi" id="provinsi" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Kota kabupaten -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="kota-kabupaten" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Kota Kabupaten</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="kota-kabupaten" id="kota-kabupaten" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Kecamatan -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="kecamatan" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Kecamatan</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="kecamatan" id="kecamatan" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Kelurahan -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="kelurahan" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Kelurahan</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="kelurahan" id="kelurahan" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Kode pos -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="kodepos" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Kode Pos</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <input type="text" name="kodepos" id="kodepos" class="form-control w-100" disabled>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Alamat -->
+                                            <div class="row mb-3 p-0">
+                                                <div class="col-12 col-md-4 pr-md-0">
+                                                    <label for="alamat" class="p-0 carmelight-label col-form-label text-start d-block d-md-inline-block">Alamat</label>
+                                                </div>
+                                                <div class="col-12 col-md-8 pl-md-0">
+                                                    <textarea class="form-control mx-textarea w-100" maxlength="250" disabled style="height: 77.3333px !important;"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+ 
+                        </div>
+ 
+
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap5.js"></script>
+    <script src="vendor/datatables/dataTables.responsive.min.js"></script>
+    <script src="vendor/datatables/responsive.bootstrap5.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/script.js"></script>
+    
+    </body>
+</html>
